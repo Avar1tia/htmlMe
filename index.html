@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Грищенко Матвей Романович</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <!-- Изменен шрифт на Poppins -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif; /* Новый шрифт */
+            background-color: #2b2b2b; /* Темно-серый фон */
+            color: #ffffff; /* Белый текст */
+            font-size: 40px;
+        }
+
+        a {
+            color: #4facfe; /* Ярко-голубой цвет ссылок */
+            text-decoration: none;
+        }
+
+            a:hover {
+                color: #00f2fe; /* Изменение цвета ссылки при наведении */
+            }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+        }
+
+        .header {
+            width: 100%;
+            padding: 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            font-weight: 600;
+            background-color: #1c1c1c; /* Темно-серый фон заголовка */
+            color: #4facfe; /* Ярко-голубой текст заголовка */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #1c1c1c, #2e2e2e); /* Градиентный фон */
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .hero__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 50px;
+            align-items: center;
+        }
+
+        .hero__about {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero__title {
+            font-size: 48px;
+            color: #ffffff; /* Белый заголовок */
+            margin-bottom: 15px;
+        }
+
+        .hero__subtitle {
+            font-size: 32px;
+            font-weight: 400;
+            color: #b5b5b5; /* Светло-серый подзаголовок */
+        }
+
+        .hero__description {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #cccccc; /* Светло-серый текст описания */
+        }
+
+            .hero__description a {
+                color: #4facfe;
+                text-decoration: none;
+            }
+
+                .hero__description a:hover {
+                    color: #00f2fe;
+                }
+
+        .hero__links {
+            display: flex;
+            margin-top: 25px;
+        }
+
+        .hero__link {
+            margin-right: 15px;
+            font-size: 30px;
+            color: #ffffff;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+            .hero__link:hover {
+                color: #4facfe;
+                transform: scale(1.1);
+            }
+
+        .hero__box {
+            max-width: 400px;
+            justify-self: center;
+            border-radius: 10%;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+            .hero__box img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            .hero__box:hover {
+                transform: scale(1.05);
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+            }
+
+        @media (max-width: 978px) {
+            .hero__container {
+                grid-template-columns: 1fr;
+            }
+
+            .hero__box {
+                max-width: 300px;
+            }
+
+            .hero__title {
+                font-size: 36px;
+            }
+
+            .hero__subtitle {
+                font-size: 24px;
+            }
+
+            .hero__description {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <span class="logo">Грищенко Матвей Романович</span>
+    </header>
+
+    <div class="hero">
+        <div class="container hero__container">
+            <div class="hero__about">
+                <h1 class="hero__title">Грищенко Матвей Романович</h1>
+                <h2 class="hero__subtitle">Студент Московского политехнического университета</h2>
+                <p class="hero__description">
+                    Группа: 241-325 <br>
+                    Номер телефона: <a href="tel:+79778143545">+7 (977) 814-35-45</a> <!-- Клик для звонка на мобильных устройствах --> <br>
+                    Почта: <a href="mailto:matvey@grischenko.su">matvey@grischenko.su</a>
+                </p>
+
+                <div class="hero__links">
+                    <a class="hero__link" href="https://vk.com/kakaya_raznitsa_net_smisla" target="_blank"><i class='bx bxl-vk'></i></a> <!-- Ссылка на ВКонтакте -->
+                    <a class="hero__link" href="https://github.com/Avar1tia?tab=repositories" target="_blank"><i class='bx bxl-github'></i></a> <!-- Ссылка на GitHub -->
+                </div>
+            </div>
+
+            <div class="hero__box">
+                <img src="me.jpg" alt="Грищенко Матвей Романович">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
